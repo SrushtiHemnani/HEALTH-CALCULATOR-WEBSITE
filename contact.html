@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+    <script src="Script/js.js" defer></script>
+</head>
+<body class="lightmode" id="contact">
+<!-- Header -->
+<div id="header-container"></div>
+
+<!-- Navbar -->
+<div class="abc" id="navbar">
+    <a href="index.php">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#info">Info</a>
+    <a id="darkmode">DarkMode</a>
+</div>
+
+<!-- Contact Information and Form -->
+<div class="contact-container">
+    <div class="contact-section" id="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> Kratin LLC, 131, Recklesstown Way, Chesterfield, New Jersey - 08515 USA.</p>
+        <p><strong>Phone:</strong> (+1) 817 898 1386</p>
+        <p><strong>Email:</strong> info@kratinmobile.com</p>
+    </div>
+    <div class="contact-section" id="contact-form">
+        <h2>Contact Us</h2>
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input id="name" name="name" required type="text">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" name="email" required type="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input id="phone" name="phone" required type="tel">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="form-control" required rows="4"></textarea>
+                <p id="char-count">Characters left: 500</p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-message"></p>
+    </div>
+</div>
+
+<!-- Scroll-to-Top Button -->
+<button id="scroll-top">Scroll to Top</button>
+
+<!-- Footer -->
+<div id="footer-container"></div>
+</body>
+</html>
